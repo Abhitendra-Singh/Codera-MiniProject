@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<style>
+    /* Navigation Bar */
+    body{
+        /* background-color: rgb(0, 0, 0); */
+        background-image: linear-gradient(grey,black);
+    }
+    #navbar {
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0px;
+        background-color: grey;
+        
+    }
+
+    #navbar::before {
+        content: "";
+        background-color: black;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.7;
+    }
+
+    /* Navigation Bar: Logo and Image */
+    #logo {
+        margin: 10px 34px;
+    }
+
+    #logo img {
+        height: 59px;
+        margin: 3px 6px;
+
+    }
+
+    .card {
+        width: 289px;
+        height: 500px;
+        background-color:rgb(83, 95, 86);
+        
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 15px;
+        border: 2px solid black;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Navigation Bar: List Styling */
+
+    #navbar ul {
+        display: flex;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    #navbar ul li {
+        list-style: none;
+        font-size: 1.3rem;
+    }
+
+    #navbar ul li a {
+        color: white;
+        display: block;
+        padding: 3px 22px;
+        border-radius: 20px;
+        text-decoration: none;
+    }
+
+    #navbar ul li a:hover {
+        color: black;
+        background-color: white;
+    }
+
+    /* Home Section */
+    #home {
+        display: flex;
+        flex-direction: column;
+        padding: 3px 200px;
+        height: 550px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #home::before {
+        content: "";
+        position: absolute;
+        background: url('../bg.jpg') no-repeat center center/cover;
+        height: 642px;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.89;
+    }
+    .card p{
+        text-align: center;
+        color: white;
+    }
+   .card h3{
+    text-align: center;
+   } 
+  #links{
+    text-decoration: wavy;
+    color:yellow;
+   }
+   
+</style>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.jpg" alt="codera.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#">Home </a></li>
+            <li class="item"><a href="#">Services </a></li>
+            <li class="item"><a href="#">About us </a></li>
+            <li class="item"><a href="#">Contact us </a></li>
+        </ul>
+    </nav>
+    <table cellspacing="70px">
+        <td>
+            <div class="card">
+                <h3>Artificial Intelligence</h3>
+                <img src="artificial-intelligence-new-technology-science-futuristic-abstract-human-brain-ai-technology-cpu-central-processor-unit-chipset-big-data-machine-learning-cyber-mind-domination-generative-ai-scaled-1-2048x1366.jpg"
+                    alt="this" width="289px" , height="200px">
+                <p>Artificial intelligence (AI) is the field of study in computer science that develops and studies
+                    intelligent
+                    machines. It refers to the intelligence exhibited by machines or software, as opposed to the
+                    intelligence of
+                    humans or animals. AI technology is widely used across various domains, including industry,
+                    government, and
+                    science. <br>
+                    <hr>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="ai.html" id="links">Learn more</a>
+                </p>
+            </div>
+        </td>
+
+        <td>
+            <div class="card">
+                <h3>Machine Learning</h3>
+                <img src="machinelearning.jpg" alt="this" width="289px" , height="200px">
+                <p>
+                    Machine learning is a subfield of artificial intelligence that uses algorithms trained on data
+                    sets to create models. These models enable machines to perform tasks like image
+                    categorization, data analysis, and price prediction—tasks that were once exclusive to humans.To know
+                    more about it , click below the link .
+
+                    <br>
+                    <hr>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="" id="links">Learn more</a>
+                </p>
+            </div>
+        </td>
+        <td>
+            <div class="card">
+                <h3>Data Science</h3>
+                <img src="datascience.jpg" alt="this" width="289px" , height="200px">
+                <p>Artificial intelligence (AI) is the field of study in computer science that develops and studies
+                    intelligent
+                    machines. It refers to the intelligence exhibited by machines or software, as opposed to the
+                    intelligence of
+                    humans or animals. AI technology is widely used across various domains, including industry,
+                    government, and
+                    science. <br>
+                    <hr>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="" id="links">Learn more</a>
+                </p>
+            </div>
+        </td>
+        <td>
+            <div class="card">
+                <h3>Cyber Security</h3>
+                <img src="cyber-security-1805632_640.webp" alt="this" width="289px" , height="200px">
+                <p>Artificial intelligence (AI) is the field of study in computer science that develops and studies
+                    intelligent
+                    machines. It refers to the intelligence exhibited by machines or software, as opposed to the
+                    intelligence of
+                    humans or animals. AI technology is widely used across various domains, including industry,
+                    government, and
+                    science. <br>
+                    <hr>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                        href="" id="links">Learn more</a>
+                </p>
+            </div>
+        </td>
+
+
+    </table>
+
+</body>
+
+</html>
